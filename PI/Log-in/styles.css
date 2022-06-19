@@ -1,157 +1,113 @@
 * {
   margin: 0;
   font-family: sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-.nav {
-  display: flex;
-}
+/* **** CABEÇALHO **** */
 
 .cabeçalho {
   background-color: #005c53;
-  height: 100px;
+  display: flex;
   align-items: center;
   width: 100vw;
-  display: flex;
-  justify-content: center;
+  height: 12vh;
 }
 
-.topnav {
+.hamburguer {
+  margin-left: 1rem;
+}
+.ze-logo-hamburger {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+header .cabeçalho .usuario-shopping {
+  position: relative;
+  left: 1rem;
+}
+nav.cabeçalho {
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-bar {
-  width: 25vw;
-  border-radius: 20px;
-  /* display: inline;
-  margin-left: auto;
-  margin-right: auto; */
-  align-items: center;
-  background-color: rgb(233, 233, 233);
+  border-radius: 1.25rem;
+  background-color: rgb(206, 206, 206);
+  text-align: center;
+  width: 50vw;
 }
 
-/*****---------AQUI TÁ TUDO BEM---------******/
+.usuario-shopping {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  gap: 1rem;
+}
+/* **** FIM CABEÇALHO **** */
 
+/* **** LOGIN **** */
+
+h1 {
+  font-size: 2rem;
+}
 .login {
   text-align: center;
-  padding-top: 150px;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 150px;
+  margin-bottom: 10rem;
 }
+
+/* **** FOOTER **** */
 
 .footer {
   background-color: #005c53;
   width: 100vw;
-  height: 100px;
+  height: 10%;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0.9rem;
   justify-content: space-around;
 }
-
-.logo {
-  position: absolute;
-  top: 0px;
-  left: 15px;
-}
-.nome {
-  position: absolute;
-  left: 85px;
-  top: 25px;
-}
-.hamburguer {
-  position: absolute;
-  top: 30px;
-  left: 180px;
-}
-.shopping-cart {
-  position: absolute;
-  right: 100px;
-  top: 37px;
-}
-
-.area-usuario {
-  position: relative;
-  top: -28px;
-  right: 100px;
-}
-/*****---------assim fica mais organizado, porém vago. ---------******
-/* .fb {
-  position: absolute;
-  right: 50px;
-  bottom: 245px;
-}
-.insta {
-  position: absolute;
-  right: 90px;
-  bottom: 245px;
-}
-.whatsapp {
-  position: absolute;
-  right: 132px;
-  bottom: 245px;
-} */
 
 .titulo-footer {
   font-family: sans-serif;
   font-weight: 100;
-  text-align: center;
   color: aliceblue;
-  font-size: 10px;
+  font-size: 0.6rem;
 }
 
-/* @media (min-width: 375px) {
+h3.titulo-footer {
+  justify-content: center;
+  align-items: center;
+}
+
+footer.footer div.socia-media a img {
+  margin: 0.5rem;
+}
+a:link {
+  text-decoration: none;
+}
+
+/* *****celular***** */
+
+@media (max-width: 400px) {
+  .cabeçalho {
+    width: 100vw;
+  }
   .topnav {
-    position: absolute;
-    width: 5px;
-    top: 60px;
+    display: none;
   }
-  .shopping-cart {
-    position: absolute;
-    right: 15px;
+  header nav.cabeçalho div.ze-logo-hamburger div.hamburguer {
+    position: relative;
+    left: 6rem;
   }
-  .area-usuario {
-    position: absolute;
-    right: 30px;
-    top: -2px;
+  .footer {
+    width: 100vw;
   }
-  .hamburguer {
-    position: absolute;
-    z-index: -1;
+  .titulo-footer {
+    display: none;
   }
-  .nome {
-    position: absolute;
-    top: 15px;
-    left: 150px;
-  }
-  .login {
-    margin-bottom: 95px;
-  }
-  h3 {
-    z-index: -1;
-  }
-  .logo-footer {
-    position: absolute;
-    bottom: 15px;
-    left: 90px;
-  }
-  .fb {
-    position: absolute;
-    bottom: 37px;
-    right: 180px;
-  }
-  .whatsapp {
-    position: absolute;
-    bottom: 37px;
-    right: 150px;
-  }
-  .insta {
-    position: absolute;
-    bottom: 37px;
-    right: 120px;
-  }
-} */
+}

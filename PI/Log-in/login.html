@@ -7,50 +7,67 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Entre - Zé Boné</title>
   </head>
-
+<header>
   <nav class="cabeçalho">
-    <div class="topnav">
-      <input class="search-bar" type="text" placeholder="O que procura?" />
+    <div class="ze-logo-hamburger">
+      
+        <a href="#">
+          <img src="./img/logos/Untitled design (2).png" width="75px" alt="logotipo" />
+        </a>
+      
+        <img src="./img/logos/nome-logo.png" width="75px;" alt="nome" />
+    
+        <div class="hamburguer">
+            <a href="#">
+              <img src="./img/icones/icons8-cardápio-24 (1).png" width="20px" alt="menu" />
+            </a>
+          </div> 
+      </div>
+     
+      <div class="topnav">
+        <input class="search-bar" type="text" placeholder="O que procura?" />
+      </div>
+   
+    <div class="usuario-shopping">
+        <div class="shopping-cart">
+          <a href="#">
+            <img
+              src="./img/icones/icons8-carrinho-favorito-48.png"
+              width="25px"
+            />
+          </a>
+        </div>
+          <div class="usuario">
+            <a href="#">
+              <img src="./img/icones/icons8-usuário-50.png" width="27px" />
+            </a>
+           </div>
+        
+      </div>
+      
+      
     </div>
   </nav>
-  <div class="logo">
-    <a href="#">
-      <img src="/Untitled design (2).png" width="75px" alt="logotipo" />
-    </a>
-  </div>
-  <div class="nome">
-    <img src="./nome-logo.png" width="75px;" alt="nome" />
-  </div>
-  <div class="hamburguer">
-    <a href="#">
-      <img src="./menu-icon-white-png-11.jpg" width="20px" alt="menu" />
-    </a>
-  </div>
-  <div class="shopping-cart">
-    <a href="#">
-      <img
-        src="./kisspng-computer-icons-portable-network-graphics-scalable-shopping-cart-svg-png-icon-free-download-19-184-5ca6a1e6e52a30.1014776415544242949387.png"
-        width="25px"
-      />
-    </a>
-    <div class="area-usuario">
-      <a href="#">
-        <img src="./61205.png" width="27px" />
-      </a>
-    </div>
-  </div>
+</header>
+ 
   <body>
-    <!-- -------------------------------- -->
+   <!-------- LOGIN -------->
+
     <conainer class="login">
       <h1>Faça seu Login</h1>
+    </br>
       <form>
         <label for="Email ou CPF">Insira seu email ou CPF:</label>
+        </br>
         <br />
         <input type="email" name="email ou cpf" placeholder="Email ou CPF" />
         <br />
         <br />
         <label for="Senha">Insira sua senha:</label>
+        
         <br />
+                
+
 
         <input type="password" id="senha" name="senha" placeholder="Senha" />
         <br />
@@ -68,29 +85,35 @@
         />
         <br />
         <a href="#">Esqueci minha senha</a>
+        <br />
+        <a href="#">Não tem conta? Cadastre-se!</a>
       </form>
     </conainer>
-    <!-- -------------------------------- -->
+  <!-------- FOOTER -------->
 
     <footer class="footer">
       <img
         class="logo-footer"
-        src="/Untitled design (2).png"
+        src="./img/logos/Untitled design (2).png"
         width="75px"
         alt="logotipo"
       />
       <h3 class="titulo-footer">
         ZÉ BONÉ - ALAMEDA DOS BACANAS 559 - SÃO PAULO - SP
       </h3>
-      <a href="https://www.facebook.com">
-        <img class="fb" src="./facebook.svg" alt="facebook" />
-      </a>
+      <div class="socia-media">
+        <a href="https://www.twitter.com" alt="twitter">
+            <img src="./img/icones/tt.png" width="20px" alt="twitter" />
+        </a>
       <a href="https://www.instagram.com" alt="instagram">
-        <img class="insta" src="./instagram.svg" alt="instagram" />
+        <img class="insta" src="./img/icones/instagram.png" width="20px" alt="instagram" />
       </a>
       <a href="https://web.whatsapp.com" alt="whatsapp">
-        <img class="whatsapp" src="./whatsapp.svg" alt="whatsapp" />
+        <img  src="./img/icones/whatsapp.png" width="20px" alt="whatsapp" />
       </a>
+    </div>
+    
+    
     </footer>
   </body>
 </html>
