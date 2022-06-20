@@ -91,9 +91,12 @@ a:link {
   text-decoration: none;
 }
 
-/* *****celular***** */
+/* celulares */
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
+  body {
+    height: 100vh;
+  }
   .cabeçalho {
     width: 100vw;
   }
@@ -102,12 +105,48 @@ a:link {
   }
   header nav.cabeçalho div.ze-logo-hamburger div.hamburguer {
     position: relative;
-    left: 6rem;
+    left: 3rem;
   }
   .footer {
     width: 100vw;
   }
   .titulo-footer {
     display: none;
+  }
+}
+
+/* TABLETS */
+
+@media (max-width: 480px) {
+  body {
+    height: 100vh;
+  }
+  .topnav {
+    display: none;
+  }
+  nav.cabeçalho {
+    display: flex;
+    justify-content: space-around;
+  }
+  header nav.cabeçalho div.ze-logo-hamburger div.hamburguer {
+    position: relative;
+    left: -0.5rem;
+  }
+  .footer {
+    width: 100vw;
+  }
+  .titulo-footer {
+    display: none;
+  }
+  div.usuario-shopping {
+    position: relative;
+    right: 3rem;
+  }
+}
+/* monitores pequenos */
+@media (max-width: 1024px) {
+  body {
+    width: 100vw;
+    height: 100vh;
   }
 }
